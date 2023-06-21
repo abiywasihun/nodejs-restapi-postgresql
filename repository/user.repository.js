@@ -5,7 +5,7 @@ const logger = require('../logger/api.logger');
 
 class UserRepository {
 
-    db = {};
+   db;
 
     constructor() {
         this.db = connect();
