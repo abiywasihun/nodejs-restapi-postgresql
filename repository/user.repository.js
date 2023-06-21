@@ -5,9 +5,9 @@ const logger = require('../logger/api.logger');
 
 class UserRepository {
 
-   db
+   
 
-    constructor() {
+    constructor(db={}) {
         this.db = connect();
         // // For Development
         this.db.sequelize.sync({ force: true }).then(() => {
