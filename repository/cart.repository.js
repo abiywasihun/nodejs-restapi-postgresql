@@ -5,9 +5,8 @@ const { Op } = require("sequelize");
 
 class CartRepository {
 
-    db = {};
 
-    constructor() {
+    constructor(db = {}) {
         this.db = connect();
         // // For Development
         // this.db.sequelize.sync({ force: true }).then(() => {
