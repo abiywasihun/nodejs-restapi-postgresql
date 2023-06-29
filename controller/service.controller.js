@@ -27,7 +27,7 @@ class ServiceController {
 
     async deleteService(serviceId) {
         logger.info('Controller: deleteService', serviceId);
-        return await servicesService.updateService(serviceId);
+        return await servicesService.deleteService(serviceId);
     }
 }
 module.exports = new ServiceController();
