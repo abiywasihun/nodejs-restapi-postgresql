@@ -82,6 +82,10 @@ app.post('/api/service', upload.array('files'), (req, res) => {
     serviceController.createService(services).then(data => res.json(data));
 });
 
+app.put('/api/service', (req, res) => {
+    serviceController.updateService(req.body.user).then(data => res.json(data));
+});
+
 app.delete('/api/service/:id', (req, res) => {
     serviceController.deleteService(req.params.id).then(data => res.json(data));
 });
