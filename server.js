@@ -82,8 +82,15 @@ app.post('/api/service', upload.array('files'), (req, res) => {
     serviceController.createService(services).then(data => res.json(data));
 });
 
-app.put('/api/service', (req, res) => {
-    serviceController.updateService(req.body.user).then(data => res.json(data));
+app.put('/api/service', upload.array('files'), (req, res) => {
+    const services={...req.body}
+    const reqFiles = [];
+    const url = req.protocol + '://' + req.get('host')
+    for (var i = 0; i < req.files.length; i++) {
+        reqFiles.push(url + '/resources/' + req.files[i].filename)
+    }
+    services.UploadPicturesVideos=reqFiles.toString()
+    serviceController.updateService(services).then(data => res.json(data));
 });
 
 app.delete('/api/service/:id', (req, res) => {

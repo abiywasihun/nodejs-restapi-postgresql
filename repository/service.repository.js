@@ -70,7 +70,7 @@ class ServiceRepository {
     async updateService(service) {
         let data = {};
         try {
-            service.updatedDate = new Date().toISOString();
+            // service.updatedDate = new Date().toISOString();
             data = await this.db.services.update({...service}, {
                 where: {
                     id: service.id

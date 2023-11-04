@@ -4,10 +4,15 @@ require('dotenv').config()
 
 
 const connect = () => {
-
+    //This is for online username
     const hostName = 'localhost';
-    const userName = 'tilosh';
-    const password = 'tilsoh@1234';
+    // const userName = 'tilosh';
+    // const password = 'tilsoh@1234';
+    // const database = 'tilosh';
+    // const dialect = 'postgres';
+
+    const userName = 'postgres';
+    const password = 'postgres@1234';
     const database = 'tilosh';
     const dialect = 'postgres';
 

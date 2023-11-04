@@ -20,98 +20,6 @@ module.exports = (sequelize, DataTypes, Model) => {
           type: DataTypes.STRING,
           allowNull: false
         },
-        cakeType: {
-          type: DataTypes.STRING,
-          // allowNull: false
-        },
-        cakeSize: {
-          type: DataTypes.STRING,
-          // allowNull: false
-        },
-        cakeFlavour: {
-          type: DataTypes.STRING,
-          // allowNull: false
-        },
-        brideGroomCarType: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        bridesmaidCarType: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        venueTypes: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        venuePackages: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        venueServiceOffering: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        guestCapacity: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        cateringPackages: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        cateringServingCapacity: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        decorationPackages: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        decorationAccommodation: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        djBandPackages: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        stagePerformanceTime: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        instruments: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        musicGenres: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        bridalCollections: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        bridalCollectionsModern: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        bridalCollectionsTraditional: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        bridalDressSize: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        photographyPackages: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
-        themeColour: {
-          type: DataTypes.STRING
-          // allowNull defaults to true
-        },
         UploadPicturesVideos: {
           type: DataTypes.TEXT
           // allowNull defaults to true
@@ -128,11 +36,19 @@ module.exports = (sequelize, DataTypes, Model) => {
           type: DataTypes.STRING
           // allowNull defaults to true
         },
-        serviceType: {
+        facebook: {
           type: DataTypes.STRING
           // allowNull defaults to true
         },
-        other: {
+        telegram: {
+          type: DataTypes.STRING
+          // allowNull defaults to true
+        },
+        instagram: {
+          type: DataTypes.STRING
+          // allowNull defaults to true
+        },
+        serviceType: {
           type: DataTypes.STRING
           // allowNull defaults to true
         },
